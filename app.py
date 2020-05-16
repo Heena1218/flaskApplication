@@ -5,7 +5,7 @@ app = Flask(__name__)
 def student():
    return render_template('index.html')
 
-@app.route('/result',methods = ['POST', 'GET'])
+@app.route('',methods = ['POST'])
 def result():
    if request.method == 'POST':
       result = request.form
